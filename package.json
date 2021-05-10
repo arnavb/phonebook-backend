@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/arnavb/phonebook-backend/issues"
   },
-  "homepage": "https://github.com/arnavb/phonebook-backend#readme"
+  "homepage": "https://github.com/arnavb/phonebook-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

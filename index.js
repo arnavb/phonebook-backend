@@ -40,6 +40,24 @@ app.get("/api/persons", (request, response) => {
 app.post("/api/persons", (request, response) => {
   const body = request.body;
 
+  if (!body.name) {
+    return response.status(400).send({
+      error: "missing name",
+    });
+  }
+
+  if (!body.number) {
+    return response.status(400).send({
+      error: "missing number",
+    });
+  }
+
+  if (persons.some((person) => person.name === body.name)) {
+    return response.status(400).send({
+      error: "name must be unique",
+    });
+  }
+
   const newPerson = {
     name: body.name,
     number: body.number,

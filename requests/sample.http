@@ -8,8 +8,9 @@ GET http://localhost:3001/api/persons/609a74cb5ed20f7b75e0ad63
 
 ###
 GET http://localhost:3001/api/persons/609a775e0ad64
-###
-DELETE http://localhost:3001/api/persons/1
 
 ###
-DELETE http://localhost:3001/api/persons/10
+DELETE http://localhost:3001/api/persons/609a74cb5ed20f7b75e0ad63
+
+###
+DELETE http://localhost:3001/api/persons/609a775e0ad64

@@ -25,7 +25,7 @@ if (process.argv.length === 5) {
     number,
   });
 
-  person.save().then((result) => {
+  person.save().then(() => {
     console.log(`Added ${name} to the database`);
     mongoose.connection.close();
   });
